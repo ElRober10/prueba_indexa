@@ -81,11 +81,11 @@ class TesterController extends AbstractController
                     break;
                 case 'v':
                         if($large2 > 0){
-                            $y2 --;
+                            $y2 ++;
                             array_push($piece2Complete, $x2 . '-' . $y2);
                             $large2 --;
                         }else{
-                            $y2 ++;
+                            $y2 --;
                             array_push($piece2Complete, $x2 . '-' . $y2);
                             $large2 --;
                         }
