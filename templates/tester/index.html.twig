@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Cuadrícula</title>
+	<link  href="{{ asset('assets/css/estilos.css')}}" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="rigth">
+        <h2 id="result">Resultado</h2>
+        <p id='result_print'>False</p>
+        <p id='msg_result'>Los rectangulos no colixionan</p>
+        <p id='coordinates'></p>
+        <p id='coordinates_result'></p>
+
+    </div>
+    <div class="left">
+        <!--Creo la cuadrícula-->
+        <div class="grid">
+            {% for y in range(1, 11) %}
+            <div class="fila">
+                {% for x in range(10, 1) %}
+                <div class="cell" id="c{{ y }}-{{ x }}"  >{{y}}-{{x}}</div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="div-return">
+      <button class="boton3" id="back" onclick="window.location.href = '{{ path('index') }}';">Volver</button>
+    </div>
+    <script>
+        // Asigno las variables de Twig a variables JavaScript
+        var shock = '{{ shock }}';
+        var piece1Complete = '{{ piece1Complete }}';
+        var piece2Complete = '{{ piece2Complete }}';
+        var coordinates = '{{ coordinates }}';
+
+    </script>
+    <script src="{{ asset('assets/js/tester.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  background-image: url('../../img/sun-tornado.png');
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+h1{
+  text-align: center;
+}
+h2{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.rigth{
+  display: inline-block;
+  width: 25%;
+  height: 425px;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 130px;
+}
+.left{
+  display: inline-flex;
+  width: 65%;
+  height: 550px;
+  text-align: center;
+  vertical-align: top;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.grid {
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px; 
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+  }
+  
+.cell {
+  background-color: white;
+  position: relative;
+  width: 50px ;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  margin-left: 0;
+}
+.fila {
+  width: 50px;
+}
+
+.div-return{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.boton3 {
+  color: #318aac !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: white;
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton3:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.div_form {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%;
+  background-color: red;
+}
+#form {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  width: 100%; 
+}
+#my-form label {
+  display: block; 
+}
+.buttons_pack {
+  display: flex;
+  justify-content: space-between;
+  }
+.boton2{
+  width: 250px;
+  margin-bottom: 15px;
+}
+#result {
+  text-align: center; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 30px; 
+  color: #fff; 
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  }
+p{
+  text-align: center; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 18px; 
+  color: #fff; 
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  }
+
